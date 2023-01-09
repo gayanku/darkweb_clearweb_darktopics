@@ -31,4 +31,27 @@ https://drive.google.com/file/d/1t2sSsCo9LD1yfcQzkxU4ABUVrZvGYxB6/view?usp=shari
 2. **Agora**: launched in 2013 and shut down voluntary in August 2015, after notifying its users. Data from Agora were collected on a daily basis from early November 2014 until its final days in 2015.
 3. **Evolution**: opened in early 2014 and shut down voluntarily in the spring of 2015, with no notice to its users, in a so-called exit-scam. Data from Evolution were collected on a daily basis from early November 2014 until it shut down in March the following year.
 
+## Preprocessed forum content
 
+The bellow table shows the preprocessed content with unparsable dates cleaned up, taking the actual forum active dates ( start date and end date) in to account
+
+| Forum                         | Original posts | After clean-up | Filter from | date Filter to | Forum from |   Forum to |
+|-------------------------------|---------------:|---------------:|------------:|---------------:|-----------:|-----------:|
+| Agora                         |        1047499 |         976447 |   3/12/2013 |     26/08/2015 |  3/12/2013 | 26/08/2015 |
+| Black Market Reloaded*        |          83269 |          81413 |  30/06/2011 |     2/12/2113* | 30/06/2011 |   2/12/213 |
+| Evolution                     |         432024 |         383629 |  14/01/2014 |     14/03/2015 | 14/01/2014 | 14/03/2015 |
+| Silk Road 1                   |        1215091 |        1145989 |  31/01/2011 |      2/10/2013 | 31/01/2011 |  2/10/2013 |
+| Silk Road 2                   |         804655 |         770078 |   6/11/2013 |      5/11/2014 |  6/11/2013 |  5/11/2014 |
+| Reddit Darknet Markets        |        1105626 |        1105330 |   1/01/2013 |     22/03/2018 |  1/01/2013 | 22/03/2018 |
+| Reddit Silk Road              |         122394 |         122341 |   1/01/1900 |      1/01/2100 |  1/01/1900 |            |
+
+**preprecessing invloved** : filtering out all posts that could not create valid timestamps after attempting to recover much posts as possible. For example, we recovered "At 10.30" and "9.45 pm" by removing the offending text snippets "At" and "pm". We dropped "Yesterday", "Today" posts as we do not have information of the actual time they were scraped, or the time zone. We also dropped other text not directly convertible as a valid time. In cases where the date was present with no time value, we still attempted to reconstruct the datetime as date:00:00:00. In the obtained data times, we still found incorrect values such as a date "2061-06-01 00:00:00" for Silkroad 1. For this reason, we filtered the datetimes for the active period of each darkweb forum, based on the pragmatic assumption that posts can only originate within the lifespan of the forum.
+
+To download, as a pandas dataframe, please use 
+- Clearnedup_ALL_7.csv.zip
+https://drive.google.com/file/d/1U7UV7RhE7gDSZC5xe7XaUifetwlZlu2I/view?usp=sharing
+
+```
+import pandas as pd
+forum_df = pd.read_csv('Clearnedup_ALL_7.csv', parse_dates=['datetime']) 
+```
