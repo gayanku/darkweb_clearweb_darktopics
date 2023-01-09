@@ -11,16 +11,17 @@ https://drive.google.com/file/d/1RAOwpvjZSYzpgui5h1kpEER-vZnZ-rvq/view?usp=shari
 - forum_data_part2.csv.zip
 https://drive.google.com/file/d/1sPmLmiLwOJVFCgBetiAJYCospsz7JVI_/view?usp=sharing
 
-This work uses the following 5 real world darkweb forums:
+There are 5 real world darkweb forums:
 1. **Silk Road 1 Forum**: Discussion forum for users of the original crypto market, Silk Road (also referred to as Silk Road 1). The market and this forum were shut down by the FBI in October 2013. Html files for this dataset were downloaded from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
-2. *8Silk Road 2 Forum**: Discussion forum for users of the cryptomarket Silk Road 2. The market and this forum were shut down by the FBI in November 2014. Some of the HTML files for this dataset were downloaded directly from the forum, others from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
+2. **Silk Road 2 Forum**: Discussion forum for users of the cryptomarket Silk Road 2. The market and this forum were shut down by the FBI in November 2014. Some of the HTML files for this dataset were downloaded directly from the forum, others from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
 3. **Agora Forum**: Discussion forum for users of the cryptomarket Agora. The market and the forum were shut down by its operator. Users were given advance notice. Some of the HTML files for this dataset were downloaded directly from the forum, others from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
 4. **Black Market Reloaded Forum**: Discussion forum for users of the cryptomarket Black Market Reloaded. The market and the forum were shut down by its operator. All users were given advance notice. Html files for this dataset were downloaded from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
 5. **Evolution Forum**: Discussion forum for users of the cryptomarket Evolution. The market and this forum were shut down by its operator, without notice, in a so-called 'exit scam.' Some of the HTML files for this dataset were downloaded directly from the forum, others from the Dark Net Market archives, 2011-2015 by \cite{dnmArchives}.
 
-and 2 clearweb Reddit forums that discuss topics related to darkweb
-6. **Reddit Darknet Markets*: Reddit page for users of all cryptomarkets (or darknet markets). The subreddit was banned in 2018. All data were collected directly from reddit.com/r/DarkNetMarkets/ in late 2017.
-7. **Reddit Silk Road (1\&2)*: Reddit page for users of the original cryptomarket, Silk Road, and Silk Road 2. All data were collected directly from reddit.com/r/SilkRoad/ in late 2017.
+and 2 clearweb Reddit forums that discuss topics related to darkweb:
+
+6. **Reddit Darknet Markets**: Reddit page for users of all cryptomarkets (or darknet markets). The subreddit was banned in 2018. All data were collected directly from reddit.com/r/DarkNetMarkets/ in late 2017.
+7. **Reddit Silk Road (1 & 2)**: Reddit page for users of the original cryptomarket, Silk Road, and Silk Road 2. All data were collected directly from reddit.com/r/SilkRoad/ in late 2017.
 
 ### The market data is in 1 file
 
