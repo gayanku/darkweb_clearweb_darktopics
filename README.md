@@ -1,4 +1,4 @@
-# darkweb_clearweb_darktopics : Darkweb forums and clear web forums on darkweb topics
+# Darkweb & Clearweb-darktopics : Darkweb forums and clear web forums on darkweb topics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains 7 darkweb market forum datasets, with usernames obfuscated.
